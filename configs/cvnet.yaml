@@ -1,0 +1,12 @@
+# CV-Net model configuration (Section III-D)
+
+model:
+  type: CVNet
+  lstm_hidden: [64, 64]  # Two LSTM layers with 64 units each
+  dropout: 0.3
+  attention: additive
+  batch_norm: true
+  dense_units: 128
+  num_classes:
+    driving_behavior: 3
+    road_anomaly: 2

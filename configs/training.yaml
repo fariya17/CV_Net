@@ -1,0 +1,22 @@
+# Training hyperparameters
+
+optimizer: Adam
+learning_rate: 0.001
+batch_size: 256
+epochs: 100
+early_stop_patience: 10
+
+scheduler:
+  type: ReduceLROnPlateau
+  patience: 5
+
+metrics:
+  - accuracy
+  - precision
+  - recall
+  - f1
+  - roc_auc
+
+profiling:
+  latency: true
+  mflops: true

@@ -1,0 +1,16 @@
+numpy
+pandas
+scipy
+scikit-learn
+torch
+tqdm
+pyyaml
+matplotlib
+lime
+onnx
+onnxruntime
+
+# Optional additions for figures and tables
+seaborn
+plotly
+tabulate

@@ -1,0 +1,18 @@
+# Base configuration for CV-Net project
+
+# Data preprocessing parameters
+window_length: 0.5  # seconds
+overlap: 0.98       # 98% overlap
+low_pass_cutoff: 20  # Hz
+
+# Data split ratios
+train_ratio: 0.7
+val_ratio: 0.1
+test_ratio: 0.2
+
+# Paths
+data_path: data/
+experiments_path: experiments/
+
+# Random seed for reproducibility
+seed: 42

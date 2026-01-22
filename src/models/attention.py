@@ -3,9 +3,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 class AdditiveAttention(nn.Module):
-    """
-    Additive attention mechanism (equations 10–12).
-    """
     def __init__(self, hidden_size):
         super(AdditiveAttention, self).__init__()
         self.W = nn.Linear(hidden_size, hidden_size)

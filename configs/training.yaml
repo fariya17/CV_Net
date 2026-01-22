@@ -4,7 +4,7 @@ optimizer: Adam
 learning_rate: 0.001
 batch_size: 256
 epochs: 100
-early_stop_patience: 10
+early_stop_patience: None
 
 scheduler:
   type: ReduceLROnPlateau

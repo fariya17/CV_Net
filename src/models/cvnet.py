@@ -3,9 +3,6 @@ import torch.nn as nn
 from .attention import AdditiveAttention
 
 class CVNet(nn.Module):
-    """
-    CV-Net: Attention-augmented LSTM for driving behavior and road anomaly detection.
-    """
     def __init__(self, input_size, lstm_hidden, dropout, attention, batch_norm, dense_units, num_classes):
         super(CVNet, self).__init__()
         self.lstm = nn.LSTM(input_size, lstm_hidden[0], num_layers=len(lstm_hidden), batch_first=True, dropout=dropout if len(lstm_hidden) > 1 else 0)
